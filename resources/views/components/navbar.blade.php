@@ -24,6 +24,7 @@
     <a href="/" > home </a>
     <a href="https://souleyd-portfolio.vercel.app/" > contact </a>
     <a href="https://souleyd-portfolio.vercel.app/" > about </a>
+    <a href="/create" > add </a>
 
 
 </div>

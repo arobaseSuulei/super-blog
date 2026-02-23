@@ -26,7 +26,7 @@
     <div class="border w-25 p-4 rounded-xl flex gap-2 mb-6" >
 
 
-        pppp
+        <!-- il te faut des routes dynamiques -->
 
     </div>
 
