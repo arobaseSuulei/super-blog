@@ -20,7 +20,7 @@
 </head>
 <body class="p-16 text-white bg-[#0d0d0d]">
 
-<div class="border p-4 rounded-xl flex gap-2 mb-6" >
+<div class="border font-semibold justify-center p-4 rounded-xl flex gap-2 mb-6" >
     <a href="/" > home </a>
     <a href="https://souleyd-portfolio.vercel.app/" > contact </a>
     <a href="https://souleyd-portfolio.vercel.app/" > about </a>

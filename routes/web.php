@@ -7,9 +7,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('/about',function(){
-    return view('about');
-});
+
 
 Route::get('/create',function(){
     return view('create_blog');
