@@ -8,10 +8,15 @@
     </div>
 
 
-    <x-bloc class="">
+    <x-bloc >
 
 
+        <p class="text-red-600">heyyyy</p>
 
+        @foreach($article as $ar)
+            <li class="text-white">{{$ar->title}}</li>
+
+        @endforeach
 
 
 

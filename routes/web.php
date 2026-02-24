@@ -1,9 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Post;
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $posts=Post::all();
+
+    return view('welcome',[
+        'article'=>$posts,
+    ]);
 });
 
 
@@ -13,24 +19,17 @@ Route::get('/create',function(){
     return view('create_blog');
 });
 
-// ajouter via le form
-Route::post('/add_title', function () {
-    // faire des insert
+Route::post('/create',function (){
 
-});
+    $post=new Post();
+    $post->title=request('title');
+    $post->content=request('content');
+    $post->cover=request('cover');
+    $post->image=request('image');
+    $post->save();
 
-// ajouter via le form
-Route::post('/add_cover', function () {
+    return redirect('/');
 
-});
-
-// ajouter via le form
-Route::post('/add_content', function () {
-
-});
-
-// ajouter via le form
-Route::post('/add_iamge', function () {
 
 });
 
