@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\Post;
+use App\Http\Controllers\PostController;
 
 Route::get('/', function () {
 
@@ -58,19 +59,8 @@ Route::get('/create',function(){
     return view('create_blog');
 });
 
-Route::post('/create',function (){
+Route::post('/create',[PostController::class,'create']);
 
-    $post=new Post();
-    $post->title=request('title');
-    $post->content=request('content');
-    $post->cover=request('cover');
-    $post->image=request('image');
-    $post->save();
-
-    return redirect('/');
-
-
-});
 
 
 
