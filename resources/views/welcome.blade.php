@@ -16,6 +16,8 @@
             <x-bloc  >
 
                 {{$ar->title}}
+
+                <a class="underline" href="/index/{{{$ar->id}}}"> visit</a>
             </x-bloc>
 
         @endforeach
