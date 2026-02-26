@@ -20,16 +20,8 @@
 </head>
 <body class="p-16 text-white bg-[#0d0d0d]">
 
-<div class="border mt-26 p-4 rounded-xl flex gap-2 mb-6" >
-
-
-    <div class="border w-25 p-4 rounded-xl flex gap-2 mb-6" >
-
-
-        <!-- il te faut des routes dynamiques -->
-
-    </div>
-
+<div class="border p-4 rounded-xl w-25">
+    {{ $slot }}
 </div>
 
 
@@ -40,7 +32,7 @@
 
 
 
-{{$slot}}
+
 
 
 

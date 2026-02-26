@@ -8,7 +8,19 @@ Route::get('/', function () {
     $posts=Post::all();
 
     return view('welcome',[
-        'article'=>$posts,
+        'article'=>$posts, // tableau assiociatif clé valeur
+    ]);
+});
+
+
+Route::get('/index/{id}', function ($id) {
+
+   $posts=Post::find($id);
+
+
+
+    return view('index',[
+        'article'=>$posts, // tableau assiociatif clé valeur
     ]);
 });
 

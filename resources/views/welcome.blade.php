@@ -1,3 +1,5 @@
+
+
 <x-navbar class="">
 
     <div class=" mr-48 mt-24 ml-48 flex items-center justify-center">
@@ -8,20 +10,17 @@
     </div>
 
 
-    <x-bloc >
-
-
-        <p class="text-red-600">heyyyy</p>
-
+    <div class="flex gap-2">
         @foreach($article as $ar)
-            <li class="text-white">{{$ar->title}}</li>
+
+            <x-bloc  >
+
+                {{$ar->title}}
+            </x-bloc>
 
         @endforeach
+    </div>
 
-
-
-
-    </x-bloc>
 
 
 
