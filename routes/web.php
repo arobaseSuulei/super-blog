@@ -25,6 +25,33 @@ Route::get('/index/{id}', function ($id) {
 });
 
 
+// afficher la route edit avant de patch
+
+Route::get('/index/{id}/edit', function ($id) {
+
+    $posts=Post::find($id);
+
+
+
+    return view('edit_blog',[
+        'article'=>$posts, // tableau assiociatif clé valeur
+    ]);
+});
+
+
+Route::patch('/index/{id}/edit', function ($id) {
+
+    $article=Post::find($id);
+    $article->update([
+        'title' => request('titre'),
+    ]);
+
+
+
+    return redirect('/');
+});
+
+
 
 
 Route::get('/create',function(){
